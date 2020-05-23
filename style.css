@@ -1,0 +1,201 @@
+/* The body encapsulates the entire page and in our case, also acts as a backdrop */
+body {
+	font-family: Helvetica, Verdana, sans-serif;
+	text-align: justify;
+	background: #FEFEFE;
+}
+
+#header {
+	border-bottom: 0.5px solid #000;
+	margin-bottom: 1em;
+}
+
+#header h1 {	
+	font-family: Georgia, serif;
+	font-size: 3em;
+	font-weight: lighter;
+	margin-bottom: 0;
+}
+
+#header h1 a {
+	color: #000000;
+	text-decoration: none; /* This is to force no-underline even though it's a link */
+}
+
+
+#subheader {
+	font-size: 1.3em;
+	font-style: italic;
+	text-align: right;
+}
+
+/* Second level headers are used in the page content */
+h2 {
+	font-size: 1.5em;
+	margin: 1em 0 0.25em 0; /* top right bottom left */
+	clear: both; 
+	border-bottom: 0.06em dashed #000000;
+}
+
+/* Set default link colour a greenish blue */
+a:link, a:visited { 
+	color: #0000AA;
+	text-decoration: none;
+}
+
+
+/* Make links red when hovered over. */
+a:hover { 
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+/* When a link is clicked, it turns greener. */
+a:active {
+	color: #009933;
+	text-decoration: underline;
+}
+
+/* Disable the blue border around images that comes up by default if they are inside a link. */
+a img { border: 0; }
+
+abbr[title] {
+	border-bottom: 0.1em dotted;
+	text-decoration: none;
+}
+
+/* Navigation tabs */
+
+nav {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	text-align: left;
+	line-height: 2em;
+	white-space: nowrap;
+}
+
+
+nav a {
+	color: black;
+	text-decoration: none;
+	background-color: #DDD;
+	padding: 0.5em;
+	border: 0.5px solid;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+ul#profile-links {
+	list-style-type: none;
+    padding-left: 0;
+}
+
+
+#content {
+	margin: auto;
+	max-width: 60em;
+	line-height: 1.4;
+	font-weight: 300;
+}
+
+div#avatar {
+	margin-right: 2em; 
+	margin-bottom: 1em;
+}
+
+.photo {
+	border: 0.1em solid black;
+}
+
+.photo.left {
+	float: left;
+	margin-right: 2em;
+}
+
+.photo.right {
+	float: right;
+	margin-left: 2em;
+}
+
+.news-list li {
+	margin-bottom: 0.25em;
+}
+
+.pubs-list li {
+	margin: 1em 0 1em 0;
+}
+
+.me {
+  color: #CF0000;
+  font-weight: bolder;
+}
+
+.paper {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+a.award { 
+  color: #04724D;
+  font-weight: bolder;
+  border-bottom: solid;
+}
+
+a.award:hover {
+	text-decoration: none;
+}
+
+span.new {
+  color: #CF0000;
+}
+
+abbr.conf {
+	font-weight: bolder;
+}
+
+.cve {
+  font-weight: bolder;
+}
+
+mark.new {
+  font-variant: small-caps;
+}
+
+div.badges {
+	float: right;
+}
+
+img.badge {
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	height: 2em;
+}
+
+li {
+	clear: right; /* To fix GitHub badges */
+}
+
+/* The footer ends the page */
+#footer {
+	clear: both; 
+	font-size: 0.8em;
+}
+
+/* Mobile optimization */
+
+@media screen and (max-width:480px) {
+	div.badges {
+		float: none;
+		display: inline;
+	}
+	img.badge {
+		margin: 0;
+		height: 1em;
+	}
+	#content {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+}
