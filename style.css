@@ -123,6 +123,10 @@ div#avatar {
 	margin-bottom: 0.25em;
 }
 
+.news-list li.old {
+	display: none;
+}
+
 .pubs-list li {
 	margin: 1em 0 1em 0;
 }

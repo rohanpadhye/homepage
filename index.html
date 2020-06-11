@@ -6,9 +6,18 @@
     <title>Rohan Padhye</title>
     <meta name="description" content="Rohan Padhye is a PhD candidate at UC Berkeley." />
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css?v=20200229" />
+    <link rel="stylesheet" href="style.css?v=20200611" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        function moreNews() {
+            document.querySelectorAll('li.old').forEach((li) => {
+                li.style.display = 'list-item'
+            });
+            document.querySelector('#more-news').style.display = 'none';
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -58,7 +67,7 @@
         <h2 id="news">News</h2>
 
         <ul class="news-list">
-            <li>2020-05-19: Invited to join the <a href="https://2020.splashcon.org/committee/splash-2020-oopsla-external-review-committee">OOPSLA 2020 External Review Committee</a>.</li>
+            <li>2020-05-19: Invited to join the <a href="https://2020.splashcon.org/track/splash-2020-oopsla">OOPSLA 2020</a> External Review Committee.</li>
             <li>2020-04-27: Accepted a tenure-track faculty position at <a href="https://cs.cmu.edu/">Carnegie Mellon University</a> (<a href="https://isri.cmu.edu">Institute for Software Research</a>).</li>
             <li>2020-04-27: Gave my Ph.D. dissertation talk! (<a href="https://www.youtube.com/watch?v=eiaEdD__BP4">Video</a>).</li>
             <li>2020-04-20: Received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a>.</li>
@@ -67,12 +76,13 @@
             <li>2019-12-08: Paper on <em>RLCheck</em>, boosting <a href="https://github.com/rohanpadhye/jqf">JQF</a> with reinforcement learning, is accepted to <a href="#icse20">ICSE 2020</a>.</li>
             <li>2019-11-09: Wrote an <a href="https://blog.padhye.org/International-Conference-Attendance/">article on equity and inclusion in international conferences</a>.</li>
             <li>2019-10-29: <a href="#sosp19">SOSP 2019 paper</a> received the best paper award!</li>
-            <li>2019-10-25: Presented the <a href="#oopsla19">FuzzFactory</a> (<a href="https://www.youtube.com/watch?v=34A1jtgfgsU">Video</a>), <a href="#splash-e19">ChocoPy</a>, and <a href="#vmil19">FailFast</a> papers at <a href="https://2019.splashcon.org">SPLASH 2019</a> in Athens, Greece.</li>
-            <li>2019-09-16: <a href="https://github.com/rohanpadhye/jqf">JQF</a>+<a href="https://people.eecs.berkeley.edu/~rohanpadhye/files/zest-issta19.pdf">Zest</a> is now integrated into <a href="http://fuzzit.dev"><em>Fuzzit</em></a>, a cloud-based continuous fuzzing service.</li>
-            <li>2019-09-13: <a href="https://chocopy.org">ChocoPy</a> is featured in an <a href="https://www.techrepublic.com/article/how-chocopy-uses-python-and-risc-v-to-teach-compiler-creation/">article on TechRepublic</a>.</li>
-            <li>2019-09-12: <a href="https://chocopy.org">ChocoPy</a> was <a href="https://news.ycombinator.com/item?id=20957420">#4 on the front-page of Hacker News</a>!</li>
-            <li>2019-08-07: Wrote an <a href="https://rohanpadhye.github.io/Artifact-Evaluation-Tips-for-Authors/">article on producing good artifacts</a> for evaluation in PL/SE/Systems conferences.</li>
-            <li>2019-07-19: Presented the <a href="#issta19">Zest</a> and <a href="#issta19-tool">JQF</a> (<a href="https://www.youtube.com/watch?v=73L9bZTya6c">Video</a>) papers at <a href="https://conf.researchr.org/home/issta-2019">ISSTA 2019</a> in Beijing, China. Both papers won awards.</li> 
+            <li id="more-news"><a href="#" onclick="return moreNews()">more...</a></li>
+            <li class="old">2019-10-25: Presented the <a href="#oopsla19">FuzzFactory</a> (<a href="https://www.youtube.com/watch?v=34A1jtgfgsU">Video</a>), <a href="#splash-e19">ChocoPy</a>, and <a href="#vmil19">FailFast</a> papers at <a href="https://2019.splashcon.org">SPLASH 2019</a> in Athens, Greece.</li>
+            <li class="old">2019-09-16: <a href="https://github.com/rohanpadhye/jqf">JQF</a>+<a href="https://people.eecs.berkeley.edu/~rohanpadhye/files/zest-issta19.pdf">Zest</a> is now integrated into <a href="http://fuzzit.dev"><em>Fuzzit</em></a>, a cloud-based continuous fuzzing service.</li>
+            <li class="old">2019-09-13: <a href="https://chocopy.org">ChocoPy</a> is featured in an <a href="https://www.techrepublic.com/article/how-chocopy-uses-python-and-risc-v-to-teach-compiler-creation/">article on TechRepublic</a>.</li>
+            <li class="old">2019-09-12: <a href="https://chocopy.org">ChocoPy</a> was <a href="https://news.ycombinator.com/item?id=20957420">#4 on the front-page of Hacker News</a>!</li>
+            <li class="old">2019-08-07: Wrote an <a href="https://rohanpadhye.github.io/Artifact-Evaluation-Tips-for-Authors/">article on producing good artifacts</a> for evaluation in PL/SE/Systems conferences.</li>
+            <li class="old">2019-07-19: Presented the <a href="#issta19">Zest</a> and <a href="#issta19-tool">JQF</a> (<a href="https://www.youtube.com/watch?v=73L9bZTya6c">Video</a>) papers at <a href="https://conf.researchr.org/home/issta-2019">ISSTA 2019</a> in Beijing, China. Both papers won awards.</li> 
         </ul>
 
         <h2 id="projects">Projects</h2>
