@@ -133,6 +133,11 @@ div#avatar {
 	display: none;
 }
 
+ul.pubs-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
 .pubs-list li {
 	margin: 1em 0 1em 0;
 }
